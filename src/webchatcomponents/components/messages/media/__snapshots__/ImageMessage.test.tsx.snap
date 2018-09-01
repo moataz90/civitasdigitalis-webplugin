@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render bot image message is not last 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1.c1.c1 {
+  width: 100%;
+  border-radius: 8px;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "justifyContent": undefined,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "minHeight": "1px",
+        "position": "relative",
+        "width": "200px",
+      }
+    }
+  >
+    <img
+      className="c1"
+      src="http://wiesmann.codiferes.net/share/bitmaps/test_pattern.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`render image message max-width percentage 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1.c1.c1 {
+  width: 100%;
+  border-radius: 8px;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "minHeight": "1px",
+        "position": "relative",
+        "width": "50%",
+      }
+    }
+  >
+    <img
+      className="c1"
+      src="http://wiesmann.codiferes.net/share/bitmaps/test_pattern.svg"
+    />
+  </div>
+</div>
+`;
+
+exports[`render own image message is not last 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1.c1.c1 {
+  width: 100%;
+  border-radius: 8px;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "justifyContent": "flex-end",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "minHeight": "1px",
+        "position": "relative",
+        "width": "200px",
+      }
+    }
+  >
+    <img
+      className="c1"
+      src="http://wiesmann.codiferes.net/share/bitmaps/test_pattern.svg"
+    />
+  </div>
+</div>
+`;

@@ -1,0 +1,529 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render carousel message 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1.c1.c1 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.c2.c2.c2 {
+  height: 100%;
+  position: relative;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  height: calc(100% + 17px);
+  margin-bottom: -17px;
+}
+
+.c3.c3.c3 {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.c6.c6.c6 {
+  width: 100%;
+  border-bottom: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.c6.c6.c6:after {
+  padding-top: 52%;
+  display: block;
+  content: '';
+}
+
+.c7.c7.c7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(someurl);
+}
+
+.c8.c8.c8 {
+  width: 100%;
+  padding: 8px 6px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  height: 92px;
+  line-height: normal;
+}
+
+.c9.c9.c9 {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: bold;
+  overflow: hidden;
+  color: black;
+}
+
+.c10.c10.c10 {
+  font-size: 12px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.c4.c4.c4 {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-bottom: 8px;
+}
+
+.c4.c4.c4:first-child {
+  margin-left: 0px;
+}
+
+.c4.c4.c4:last-child {
+  border-right: 10px solid transparent;
+}
+
+.c5.c5.c5 {
+  width: 260px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: white;
+  box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.3);
+  margin: 15px 10px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "padding": 0,
+      "paddingBottom": 10,
+    }
+  }
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                Card1
+              </div>
+              <div
+                className="c10"
+              >
+                Card1
+              </div>
+            </div>
+          </div>
+          <div>
+            Some child
+          </div>
+          <div>
+            Another child
+          </div>
+        </div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                Card2
+              </div>
+              <div
+                className="c10"
+              >
+                Card2
+              </div>
+            </div>
+          </div>
+          <div>
+            Some child
+          </div>
+          <div>
+            Another child
+          </div>
+        </div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                Card3
+              </div>
+              <div
+                className="c10"
+              >
+                Card3
+              </div>
+            </div>
+          </div>
+          <div>
+            Some child
+          </div>
+          <div>
+            Another child
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`render carousel message canScrollLeft 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1.c1.c1 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.c2.c2.c2 {
+  height: 100%;
+  position: relative;
+  padding-bottom: 0px;
+  box-sizing: border-box;
+  height: calc(100% + 17px);
+  margin-bottom: -17px;
+}
+
+.c3.c3.c3 {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding-bottom: 20px;
+}
+
+.c6.c6.c6 {
+  width: 100%;
+  border-bottom: 0px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.c6.c6.c6:after {
+  padding-top: 52%;
+  display: block;
+  content: '';
+}
+
+.c7.c7.c7 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-image: url(someurl);
+}
+
+.c8.c8.c8 {
+  width: 100%;
+  padding: 8px 6px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  height: 92px;
+  line-height: normal;
+}
+
+.c9.c9.c9 {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: bold;
+  overflow: hidden;
+  color: black;
+}
+
+.c10.c10.c10 {
+  font-size: 12px;
+  font-family: Helvetica;
+  color: white;
+}
+
+.c4.c4.c4 {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  padding-bottom: 8px;
+}
+
+.c4.c4.c4:first-child {
+  margin-left: 0px;
+}
+
+.c4.c4.c4:last-child {
+  border-right: 10px solid transparent;
+}
+
+.c5.c5.c5 {
+  width: 260px;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  background-color: white;
+  box-shadow: 0px 0px 10px -2px rgba(0,0,0,0.3);
+  margin: 15px 10px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+
+<div
+  className="c0"
+  style={
+    Object {
+      "padding": 0,
+      "paddingBottom": 10,
+    }
+  }
+>
+  <div
+    className="c1"
+  >
+    <div
+      className="c2"
+    >
+      <div
+        className="c3"
+      >
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                Card1
+              </div>
+              <div
+                className="c10"
+              >
+                Card1
+              </div>
+            </div>
+          </div>
+          <div>
+            Some child
+          </div>
+          <div>
+            Another child
+          </div>
+        </div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                Card2
+              </div>
+              <div
+                className="c10"
+              >
+                Card2
+              </div>
+            </div>
+          </div>
+          <div>
+            Some child
+          </div>
+          <div>
+            Another child
+          </div>
+        </div>
+        <div
+          className="c4"
+        >
+          <div
+            className="c5"
+          >
+            <div
+              className="c6"
+            >
+              <div
+                className="c7"
+              />
+            </div>
+            <div
+              className="c8"
+            >
+              <div
+                className="c9"
+              >
+                Card3
+              </div>
+              <div
+                className="c10"
+              >
+                Card3
+              </div>
+            </div>
+          </div>
+          <div>
+            Some child
+          </div>
+          <div>
+            Another child
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

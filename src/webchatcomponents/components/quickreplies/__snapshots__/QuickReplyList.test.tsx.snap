@@ -1,0 +1,260 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`quick reply animation test IE 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1 {
+  direction: rtl;
+  -webkit-animation: cKFngk ease 1s;
+  animation: cKFngk ease 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation: cKFngk ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 10% 10%;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation: cKFngk ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 10% 10%;
+  -moz-animation-fill-mode: backwards;
+  -o-animation: cKFngk ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 10% 10%;
+  -o-animation-fill-mode: backwards;
+  -ms-animation: cKFngk ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 10% 10%;
+  -ms-animation-fill-mode: backwards;
+  opacity: 0;
+  opacity: 19;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      Some child
+    </div>
+    <div>
+      Another child
+    </div>
+  </div>
+</div>
+`;
+
+exports[`quick reply animation test ios 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1 {
+  direction: rtl;
+  -webkit-animation: cKFngk ease 1s;
+  animation: cKFngk ease 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation: cKFngk ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 10% 10%;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation: cKFngk ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 10% 10%;
+  -moz-animation-fill-mode: backwards;
+  -o-animation: cKFngk ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 10% 10%;
+  -o-animation-fill-mode: backwards;
+  -ms-animation: cKFngk ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 10% 10%;
+  -ms-animation-fill-mode: backwards;
+  opacity: 0;
+  opacity: 19;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      Some child
+    </div>
+    <div>
+      Another child
+    </div>
+  </div>
+</div>
+`;
+
+exports[`quick reply animation test other browser 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="react-reveal"
+    style={
+      Object {
+        "opacity": undefined,
+      }
+    }
+  >
+    Some child
+  </div>
+  <div
+    className="react-reveal"
+    style={
+      Object {
+        "opacity": undefined,
+      }
+    }
+  >
+    Another child
+  </div>
+</div>
+`;
+
+exports[`quick reply animation test safari 1`] = `
+.c0.c0.c0 {
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.c1 {
+  direction: rtl;
+  -webkit-animation: cKFngk ease 1s;
+  animation: cKFngk ease 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-transform-origin: 10% 10%;
+  -ms-transform-origin: 10% 10%;
+  transform-origin: 10% 10%;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
+  -webkit-animation: cKFngk ease 1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 10% 10%;
+  -webkit-animation-fill-mode: backwards;
+  -moz-animation: cKFngk ease 1s;
+  -moz-animation-iteration-count: 1;
+  -moz-transform-origin: 10% 10%;
+  -moz-animation-fill-mode: backwards;
+  -o-animation: cKFngk ease 1s;
+  -o-animation-iteration-count: 1;
+  -o-transform-origin: 10% 10%;
+  -o-animation-fill-mode: backwards;
+  -ms-animation: cKFngk ease 1s;
+  -ms-animation-iteration-count: 1;
+  -ms-transform-origin: 10% 10%;
+  -ms-animation-fill-mode: backwards;
+  opacity: 0;
+  opacity: 19;
+}
+
+<div
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    <div>
+      Some child
+    </div>
+    <div>
+      Another child
+    </div>
+  </div>
+</div>
+`;

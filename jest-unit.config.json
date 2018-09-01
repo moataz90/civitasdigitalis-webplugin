@@ -1,0 +1,19 @@
+{
+	"transform": {
+		"^.+\\.tsx?$": "ts-jest"
+	},
+	"testRegex": "(/__tests__/.*|(\\.|/)(unit\\.test))\\.(tsx?)$",
+	"moduleFileExtensions": [
+		"ts",
+		"js"
+	],
+	"globals": {
+		"ts-jest": {
+			"skipBabel": true
+		}
+	},
+	"testPathIgnorePatterns": [],
+	"collectCoverage": true,
+	"testEnvironment": "node",
+	"testUrl": "http://localhost"
+}
