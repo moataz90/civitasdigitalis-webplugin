@@ -8,7 +8,7 @@ import { initPlugin } from './init-logic/init-plugin';
 		'version': 'staging',
 		'bot': {
 			'id': '1',
-			'backendUrl': 'ws://localhost:3000',
+			'backendUrl': 'ws://localhost:8999',
 			'displayName': 'CivitasDigitalis',
 			'disclaimerUrl': 'http://www.google.com'
 		},
@@ -17,7 +17,7 @@ import { initPlugin } from './init-logic/init-plugin';
 			'targetDOMElement': null,
 			'overlay': {
 				'width': 320,
-				'height': 480
+				'height': 520
 			},
 			'header': {
 				'iconUrl': '',
@@ -28,7 +28,7 @@ import { initPlugin } from './init-logic/init-plugin';
 			}
 		},
 		'session': {
-			'allowSessions': true,
+			'allowSessions': false,
 			'expire': 7200000
 		},
 		'behaviour': {
