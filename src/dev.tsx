@@ -8,6 +8,7 @@ import { initPlugin } from './init-logic/init-plugin';
 		'version': 'staging',
 		'bot': {
 			'id': '1',
+			// 'backendUrl': 'ws://18.222.67.176:8999',
 			'backendUrl': 'ws://localhost:8999',
 			'displayName': 'CivitasDigitalis',
 			'disclaimerUrl': 'http://www.google.com'
@@ -42,7 +43,7 @@ import { initPlugin } from './init-logic/init-plugin';
 				'delay': 1000,
 				'type': 'postback',
 				'payload': {
-					'payload': '{"intent":"Begrüßung"}',
+					'payload': '{"intent":"start"}',
 					'title': 'Los geht\'s!'
 				}
 
@@ -98,5 +99,6 @@ import { initPlugin } from './init-logic/init-plugin';
 		}
 	};
 
+	console.log(JSON.stringify(stadtWerkeLocalConfig));
 	initPlugin(stadtWerkeLocalConfig);
 })();

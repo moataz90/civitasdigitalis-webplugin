@@ -63,8 +63,8 @@
 	},
 	"scripts": {
 		"start": "node scripts/start.js",
-		"build:package": "npm run clear:types && tsc",
-		"build:standalone": "npm run clear:types && NODE_ENV=production webpack --config ./webpack.standalone.js",
+		"build:package": "tsc",
+		"build:standalone": "cross-env NODE_ENV=production webpack --config ./webpack.standalone.js",
 		"prepare:publish:standalone": "npm run build:standalone  && node scripts/prepare-publish.js",
 		"test": "npm run test:unit",
 		"test:unit": "NODE_ENV=testing jest --forceExit --config=jest-unit.config.json",

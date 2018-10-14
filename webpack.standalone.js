@@ -110,14 +110,15 @@ module.exports = {
 			// Enable file caching
 			cache: true,
 			sourceMap: true,
-		}),
+		})
+		/*,
 		new CompressionPlugin({
 			asset: "[path][query]",
 			algorithm: "gzip",
 			test: /\.js$|\.css$|\.html$|\.js.map$/,
 			threshold: 0,
 			minRatio: 0.8
-		})
+		})*/
 	],
 
 	performance: {
