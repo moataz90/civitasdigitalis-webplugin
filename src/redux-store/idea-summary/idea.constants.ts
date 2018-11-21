@@ -1,0 +1,2 @@
+export const CATEGORY_LIST_SET = 'CATEGORY_LIST_SET';
+export type CATEGORY_LIST_SET = typeof CATEGORY_LIST_SET;

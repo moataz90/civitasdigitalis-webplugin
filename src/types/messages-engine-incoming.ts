@@ -1,3 +1,5 @@
+import { IIdea } from 'src/redux-store/messages/messages.schema';
+
 export interface IMessageIncoming {
 	recipient: {
 		id: string;
@@ -14,6 +16,7 @@ export enum IMessageSenderAction {
 }
 
 export interface IMessageIncomingPayload {
+	idea?: IIdea;
 	text?: string;
 	attachment?: IMessageIncomingPayloadAttachment;
 	quick_replies?: IMessageIncomingPayloadQuickReply[];

@@ -1,16 +1,17 @@
 import * as React from 'react';
 import {
 	IMessage, MessageType, IMessagePayloadText, IMessagePayloadMedia, IMessagePayloadCarousel,
-	IMessagePayloadQuickreply, IMessageQuickreplyType, MessageButtonType
+	IMessagePayloadQuickreply, IMessageQuickreplyType, MessageButtonType, IMessagePayloadIdea
 } from '../../../../redux-store/messages/messages.schema';
 import { determineMessageType } from '../../../../utils/messages/determine-internal-message-type';
 import {
 	TextMessage, MediaMessage, Button, ButtonCallback, CarouselMessage, CarouselCard, QuickReplyList,
-	IMessagePayloadButton
+	IMessagePayloadButton, IdeaSummary
 } from '../../../../webchatcomponents';
 import { IThemeSchema } from '../../../../theme/ThemeSchema';
 import { scrollSmooth } from '../../../../utils/scrolling/smooth-scrolling';
 import { easings } from '../../../../utils/scrolling/easing';
+import { IIdeaSummaryState } from 'src/redux-store/idea-summary/idea.schema';
 
 export type OnLoadMedia = (success: boolean, width: number, height: number) => void;
 
@@ -65,11 +66,42 @@ const mapQuickreplyToComponent = (qr: IMessagePayloadQuickreply, theme: IThemeSc
 };
 
 export const mapMessageToComponent = (message: IMessage<any>, key: number | string, theme: IThemeSchema,
-	buttonCallback: ButtonCallback, onLoadMedia: OnLoadMedia, isLastMessage: boolean): React.ReactNode => {
+	buttonCallback: ButtonCallback, onLoadMedia: OnLoadMedia, isLastMessage: boolean, ideaSummary: IIdeaSummaryState): React.ReactNode => {
 
 	const messageType = determineMessageType(message);
+	if (messageType === MessageType.Idea) {
+		const payload = (message as IMessage<IMessagePayloadIdea>).payload;
+		console.log('koko ko ko ');
+		console.log(message);
+		const buttonElements = (payload.buttons || []).map((btn, idx) =>
+			mapButtonToComponent(btn, theme, idx, idx, 10, buttonCallback));
 
-	if (messageType === MessageType.Text) {
+		const quickreplyElements = (payload.quickreplies || []).map((qr, idx) =>
+			mapQuickreplyToComponent(qr, theme, idx, idx, buttonCallback));
+
+		const quickreplyList = quickreplyElements.length > 0 && isLastMessage
+			? [<QuickReplyList key="qr-list">{quickreplyElements}</QuickReplyList>]
+			: null;
+
+		return [
+			<IdeaSummary
+				data={ideaSummary}
+				idea={payload.idea}
+				fontColor={theme.message.textMessage.fontColor}
+				backgroundColor={message.isOwnMessage
+					? theme.message.textMessage.backgroundColorOwn
+					: theme.message.textMessage.backgroundColorBot}
+				maxWidth={theme.message.textMessage.maxWidth}
+				isOwnMessage={message.isOwnMessage}
+				fontFamily={theme.fontFamily}
+				isLastMessage={isLastMessage}
+				section={message.section}
+				key={key}
+			>
+				{buttonElements}
+			</IdeaSummary>
+		].concat(quickreplyList);
+	} else if (messageType === MessageType.Text) {
 		const payload = (message as IMessage<IMessagePayloadText>).payload;
 
 		const buttonElements = (payload.buttons || []).map((btn, idx) =>

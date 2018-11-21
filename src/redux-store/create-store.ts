@@ -4,6 +4,7 @@ import { socketReducer } from './socket/socket.reducer';
 import { SocketState } from '../redux-store/socket/socket.schema';
 import { messagesReducer } from './messages/messages.reducer';
 import { userReducer } from './user/user.reducer';
+import { IdeaSummaryReducer } from './idea-summary/idea.reducer';
 import { createStore as createReduxStore, compose, combineReducers, applyMiddleware, Store } from 'redux';
 import { IStoreSchema } from './store-schema';
 import thunk from 'redux-thunk';
@@ -21,8 +22,8 @@ const rootReducer = buildRootReducer({
 	messages: messagesReducer,
 	socket: socketReducer,
 	ui: uiReducer,
-	toolbar: toolbarReducer
-
+	toolbar: toolbarReducer,
+	ideaSummary: IdeaSummaryReducer
 });
 
 const composeEnhancers = windowIfDefined.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

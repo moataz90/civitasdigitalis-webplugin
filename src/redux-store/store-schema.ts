@@ -3,6 +3,7 @@ import { IMessagesState } from './messages/messages.schema';
 import { ISocketState } from './socket/socket.schema';
 import { IUIState } from './ui/ui.schema';
 import { IToolbarState } from './toolbar/toolbar.schema';
+import { IIdeaSummaryState } from './idea-summary/idea.schema';
 import { Timestamp } from '../types/common-types';
 
 export interface IStoreSchema {
@@ -12,4 +13,5 @@ export interface IStoreSchema {
 	socket: ISocketState;
 	ui: IUIState;
 	toolbar: IToolbarState;
+	ideaSummary: IIdeaSummaryState;
 }

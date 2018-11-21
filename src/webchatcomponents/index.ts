@@ -9,3 +9,4 @@ export { Button } from './components/buttons/Button';
 export { QuickReplyList } from './components/quickreplies/QuickReplyList';
 export { IMessagePayloadButton, MessageButtonType, ButtonCallback } from './types/button-types';
 export { TypingMessage } from './components/typingMessage/TypingMessage';
+export { IdeaSummary } from './components/messages/customMessages/idea/IdeaSummary';

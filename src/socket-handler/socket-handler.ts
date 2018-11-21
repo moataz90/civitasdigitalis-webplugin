@@ -20,6 +20,7 @@ import { getQueryParams } from '../utils/other/query-parameters';
 import { isDevEnv } from '../utils/other/environment';
 
 import { setWsHeartbeat } from 'ws-heartbeat/client';
+import { categoryListSet } from './../redux-store/idea-summary/idea.actions';
 
 interface IReconnectCredentials {
 	host: string;
@@ -214,37 +215,6 @@ const reconnect = async (host: string, botID: string, verfiyToken: string, curre
 	}
 };
 
-// const reconnectBackGround = async (host: string, botID: string, verfiyToken: string, currentUserID: string,
-// 	store: Store<IStoreSchema>, firstConnect: boolean, attempts: number = 4, timeout: number = 0): Promise<WebSocket> => {
-
-// 	if (attempts > 0) {
-// 		if (timeout > 0) {
-// 			store.dispatch(socketStateSet(SocketState.WaitingForReconnect));
-// 			store.dispatch(socketNextReconnectTimeSet(Date.now()));
-
-// 			await new Promise<void>(resolve => setTimeout(() => resolve(), timeout));
-// 		}
-
-// 		store.dispatch(socketStateSet(firstConnect ? SocketState.Connecting : SocketState.Reconnecting));
-
-// 		try {
-// 			const webSocket = await establishConnection(host, botID, currentUserID, verfiyToken);
-
-// 			return webSocket;
-// 		} catch (err) {
-// 			if (err.message === 'Timeout') {
-// 				return reconnect(host, botID, verfiyToken, currentUserID, store, firstConnect, attempts - 1);
-// 			} else {
-// 				return reconnect(host, botID, verfiyToken, currentUserID, store, firstConnect, attempts - 1, timeout + 10000);
-// 			}
-// 		}
-// 	} else {
-// 		console.error(`Tried to reconnect 10 times, no success`);
-
-// 		return null;
-// 	}
-// }
-
 const handleReferral = (store: Store<IStoreSchema>) => {
 	// Handle referral
 	const url = window.location.href;
@@ -308,6 +278,19 @@ export const start = async (host: string, botID: string, verfiyToken: string, co
 					userRegisteredEventHandler(message.payload, store);
 
 					store.dispatch(socketStateSet(SocketState.Connected));
+					store.dispatch(categoryListSet(
+						[
+							{ catId: 1, name: 'Grün & Erholung' },
+							{ catId: 2, name: 'Klima & Umweltschutz' },
+							{ catId: 3, name: 'Sonstiges' },
+							{ catId: 4, name: 'Soziales & Kultur' },
+							{ catId: 5, name: 'Sport & Freizeit' },
+							{ catId: 6, name: 'Städtebau & Stadtraum' },
+							{ catId: 7, name: 'Verkehr & Mobilität' },
+							{ catId: 8, name: 'Wohnen & Arbeiten' }
+						]
+					));
+
 				} else if (message.type === WSMessageEvent.NewMessage) {
 					newMessageEventHandler((message as any as IWebsocketMessageEvent<IMessageOutgoing>).payload, config, store);
 				} else if (message.type === WSMessageEvent.VerfiyTokenMissing) {

@@ -13,6 +13,7 @@ import { waitUntil } from '../../../../utils/other/wait-until';
 import { TypingMessage } from '../../../../webchatcomponents';
 import { ChatToolBar } from '../tool-bar/ChatToolBar';
 import { ConfigContext } from '../../../../config/ConfigProvider';
+import { IIdeaSummaryState } from 'src/redux-store/idea-summary/idea.schema';
 
 const MessageViewWrapper = styled.div`
 	flex: 1 0 0;
@@ -31,6 +32,7 @@ export interface IMessageViewProps {
 	userID: string;
 	shouldScrollDown: boolean;
 	typing: boolean;
+	ideaSummary: IIdeaSummaryState;
 }
 
 export interface IMessageViewState {
@@ -105,7 +107,7 @@ class MessageViewComponent extends React.Component<IMessageViewProps, IMessageVi
 	}
 
 	public render() {
-		const { messages, typing, theme } = this.props;
+		const { messages, typing, theme, ideaSummary } = this.props;
 
 		return (
 			<MessageViewWrapper>
@@ -120,7 +122,7 @@ class MessageViewComponent extends React.Component<IMessageViewProps, IMessageVi
 							<MessageViewInnerWrapper style={{ paddingTop: this.state.paddingTop }}>
 								{
 									messages.map((message, idx) =>
-										mapMessageToComponent(message, message.id, theme, this.onClickButton, this.onLoadMedia, idx === messages.length - 1))
+										mapMessageToComponent(message, message.id, theme, this.onClickButton, this.onLoadMedia, idx === messages.length - 1, ideaSummary))
 
 								}
 							</MessageViewInnerWrapper  >
@@ -147,7 +149,8 @@ const mapStateToProps = (storeState: IStoreSchema) => {
 		messages: storeState.messages.messages,
 		userID: storeState.user.sessionID,
 		shouldScrollDown: storeState.ui.chatShouldScrollDown,
-		typing: storeState.messages.typing
+		typing: storeState.messages.typing,
+		ideaSummary: storeState.ideaSummary
 	};
 };
 

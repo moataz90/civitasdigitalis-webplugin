@@ -5,7 +5,7 @@ import {
 import { IConfig } from './../../config/config-schema';
 import {
 	IMessage, IMessagePayloadText, IMessagePayloadMedia, MessageMediaType, IMessagePayloadCarousel,
-	IMessagePayloadButton, IMessagePayloadQuickreply, IMessageQuickreplyType, IMessagePayloadTemplateButton, IAction
+	IMessagePayloadButton, IMessagePayloadQuickreply, IMessageQuickreplyType, IMessagePayloadTemplateButton, IAction, IMessagePayloadIdea
 } from '../../redux-store/messages/messages.schema';
 import {
 	IMessageIncoming, IMessageIncomingAttachmentType, IMessageIncomingPayloadAttachmentMedia,
@@ -66,7 +66,15 @@ export const makeInternalMessageFromIncomingMessage = (message: IMessageIncoming
 	};
 
 	if (message.message) {
-		if (message.message.text) {
+		if (message.message.idea) {
+			// It's a text message
+			(internalMessage as IMessage<IMessagePayloadIdea>).payload.idea = message.message.idea;
+
+			if (message.message.buttons) {
+				(internalMessage as IMessage<IMessagePayloadText>).payload.buttons =
+					message.message.buttons.map(button => makeIncomingButton(button));
+			}
+		} else if (message.message.text) {
 			// It's a text message
 			(internalMessage as IMessage<IMessagePayloadText>).payload.text = message.message.text;
 

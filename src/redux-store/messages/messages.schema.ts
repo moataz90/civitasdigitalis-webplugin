@@ -1,7 +1,8 @@
 export enum MessageType {
 	Text,
 	Media,
-	Carousel
+	Carousel,
+	Idea
 }
 
 export enum MessageMediaType {
@@ -38,6 +39,17 @@ export interface IMessagePayloadQuickreply {
 
 export interface IMessagePayloadBase {
 	quickreplies?: IMessagePayloadQuickreply[];
+}
+export interface IIdea {
+	category: string;
+	title: string;
+	body: string;
+	email: string;
+	tags: string;
+}
+export interface IMessagePayloadIdea extends IMessagePayloadBase {
+	idea: IIdea;
+	buttons?: IMessagePayloadButton[];
 }
 
 export interface IMessagePayloadText extends IMessagePayloadBase {
@@ -79,7 +91,8 @@ export enum Section {
 	single
 }
 
-export interface IMessage<T extends IMessagePayloadText | IMessagePayloadMedia | IMessagePayloadCarousel | IMessagePayloadTemplateButton> {
+export interface IMessage<T extends IMessagePayloadText | IMessagePayloadMedia | IMessagePayloadCarousel
+	| IMessagePayloadTemplateButton | IMessagePayloadIdea> {
 	id: string;
 	sender: string;
 	recipient: string;
